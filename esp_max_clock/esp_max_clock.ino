@@ -1,3 +1,5 @@
+//github.com/vinojv96
+
 #include <ESP8266WiFi.h>
 #include <SPI.h>
 #include <Adafruit_GFX.h>
@@ -32,13 +34,13 @@ void setup() {
  
   //INSERT YOUR SSID AND PASSWORD HERE
 
-  WiFi.begin("Vino","vinoth@1996");
+  WiFi.begin("SSID","password"); // change your SSID and Password
 
   //CHANGE THE POOL WITH YOUR CITY. SEARCH AT https://www.ntppool.org/zone/@
   
   configTime(0 * 3600, 0, "in.pool.ntp.org", "time.nist.gov");
   
-  setenv("TZ", "GMT-1BST",1);
+  setenv("TZ", "GMT-1BST",1);  //change timezone here
   
   matrix.setIntensity(0); // Use a value between 0 and 15 for brightness
   matrix.setRotation(0, 1);    // The first display is position upside down
