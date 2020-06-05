@@ -1,4 +1,4 @@
-# nodemci_clock
+# nodemcu_clock
 Nodemcu max 7219 clock Libraries Used
 
 #include <Adafruit_GFX.h> 
